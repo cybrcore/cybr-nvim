@@ -21,7 +21,13 @@
 
 # Steps
 ## 0. Before you start
-- Make sure [Geist Mono Nerd Font](../INSTALL.md#prerequisites--setup) is installed
+- Make sure [Geist Mono Nerd Font](https://www.nerdfonts.com/font-downloads) is installed, you can do that from terminal with:
+```bash
+curl -L https://github.com/ryanoasis/nerd-fonts/releases/latest/download/GeistMono.zip -o GeistMono.zip
+mkdir -p ~/.local/share/fonts
+unzip GeistMono.zip -d ~/.local/share/fonts/GeistMono
+fc-cache -fv
+```
 - Make sure either 1) neovim is installed: `sudo pacman -S nvim`, or 2) lazyvim is installed: `git clone https://github.com/LazyVim/starter ~/.config/nvim`
 - See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
 - [Nvim Github](https://github.com/neovim/neovim) | [Nvim Arch Wiki](https://wiki.archlinux.org/title/Neovim)
