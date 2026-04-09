@@ -36,27 +36,22 @@ fc-cache -fv
 ## 1. Instalation
 ### Automated
 ```sh
-git clone --depth=1 --filter=blob:none --no-checkout https://github.com/cybrcore/cybr-nvim.git && cd cybr-nvim && git sparse-checkout init --cone && git sparse-checkout set nvim && git checkout main && mkdir -p ~/.config/nvim && cp -r nvim/* ~/.config/nvim/ && cd ~ && rm -rf cybr-nvim
+git clone --depth=1 --filter=blob:none --no-checkout https://github.com/cybrcore/cybr-nvim.git && cd cd cybr-nvim && git sparse-checkout init --cone && git sparse-checkout set nvim && git checkout main && mv nvim ~/.config/ && cd ~ && rm -rf cd cybr-nvim
 ```
-↑ Unsure what this does? [Explanation](https://github.com/cybrcore/cybrland/blob/main/INSTALL.md#How-sparse-checkout-works)  
-
-### Manual
-```sh
-git clone --depth=1 --filter=blob:none --no-checkout https://github.com/scherrer-txt/cybrland.git && cd cybrland && git sparse-checkout init --cone && git sparse-checkout set nvim && git checkout main
-```
+↑ Unsure what this does? [Explanation](https://github.com/cybrcore/cybrdots/blob/main/INSTALL.md#How-sparse-checkout-works)  
 
 ### Expected file structure
 ```
 ~/.config/nvim/
 ├── colors/
-│   └── cybrvim.lua
+│   └── cybrcore.lua
 ├── lua/
-│    ├── cybrvim/
+│    ├── cybrcore/
 │    │    ├── groups.lua
 │    │    ├── init.lua
 │    │    └── palette.lua
 │    ├── plugins/
-│    │    ├── cybrvim.lua
+│    │    ├── cybrcore.lua
 │    │    └── dashboard.lua
 │    └── ...
 ```
@@ -64,5 +59,5 @@ git clone --depth=1 --filter=blob:none --no-checkout https://github.com/scherrer
 ## 2. Apply theme
 ```sh
 nvim
-:colorscheme cybrvim
+:colorscheme cybrcore
 ```

@@ -1,8 +1,8 @@
 -- # ---------------------------------------
--- # CYBRvim     neovim theme syntax highlight (part of cybrland)
--- # Project:    https://github.com/scherrer-txt/cybrland
+-- # cybr-nvim   lucid syntax highlight for neovim (part of cybrcore)
+-- # Project:    https://github.com/cybrcore/cybr-nvim
 -- # Author:     scherrer-txt   |   License:     GPL-3.0
--- # Source:     ~/.config/nvim/lua/cybrvim/groups.lua
+-- # Source:     ~/.config/nvim/lua/cybrcore/groups.lua
 -- # ---------------------------------------
 
 ---@class Highlight
@@ -33,7 +33,7 @@
 ---@alias HighlightGroups table<string, Highlight>
 
 ---setup highlight groups
----@param configs CybrvimConfig
+---@param configs CybrcoreConfig
 ---@return HighlightGroups
 ---@nodiscard
 local function setup(configs)

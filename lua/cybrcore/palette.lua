@@ -1,8 +1,8 @@
 -- # ---------------------------------------
--- # CYBRvim     neovim theme palette (part of cybrland)
--- # Project:    https://github.com/scherrer-txt/cybrland
+-- # cybr-nvim   lucid theme palette for neovim (part of cybrcore)
+-- # Project:    https://github.com/cybrcore/cybr-nvim
 -- # Author:     scherrer-txt   |   License:     GPL-3.0
--- # Source:     ~/.config/nvim/lua/cybrvim/palette.lua
+-- # Source:     ~/.config/nvim/lua/cybrcore/palette.lua
 -- # ---------------------------------------
 
 ---@class Palette

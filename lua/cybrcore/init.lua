@@ -1,8 +1,8 @@
 -- # ---------------------------------------
--- # CYBRvim     neovim theme init (part of cybrland)
--- # Project:    https://github.com/scherrer-txt/cybrland
+-- # cybr-nvim   lucid theme init for neovim (part of cybrcore)
+-- # Project:    https://github.com/cybrcore/cybr-nvim
 -- # Author:     scherrer-txt   |   License:     GPL-3.0
--- # Source:     ~/.config/nvim/lua/cybrvim/init.lua
+-- # Source:     ~/.config/nvim/lua/cybrcore/init.lua
 -- # ---------------------------------------
 
 local o = vim.o
@@ -11,7 +11,7 @@ local cmd = vim.cmd
 local nvim_set_hl = vim.api.nvim_set_hl
 local tbl_deep_extend = vim.tbl_deep_extend
 
----@class CybrvimConfig
+---@class CybrcoreConfig
 ---@field italic_comment? boolean
 ---@field transparent_bg? boolean
 ---@field show_end_of_buffer? boolean
@@ -24,9 +24,9 @@ local DEFAULT_CONFIG = {
    transparent_bg = false,
    show_end_of_buffer = false,
    lualine_bg_color = nil,
-   colors = require("cybrvim.palette"),
+   colors = require("cybrcore.palette"),
    overrides = {},
-   theme = 'cybrvim'
+   theme = 'cybrcore'
 }
 
 local TRANSPARENTS = {
@@ -71,12 +71,12 @@ local function override_groups(groups, overrides)
    return groups
 end
 
----apply cybrvim colorscheme
----@param configs CybrvimConfig
+---apply cybrcore colorscheme
+---@param configs cybrcoreConfig
 local function apply(configs)
    local colors = configs.colors
    apply_term_colors(colors)
-   local groups = require("cybrvim.groups").setup(configs)
+   local groups = require("cybrcore.groups").setup(configs)
 
    -- apply transparents
    if configs.transparent_bg then
@@ -98,30 +98,30 @@ local function apply(configs)
 end
 
 
----@type CybrvimConfig
+---@type cybrcoreConfig
 local user_configs = {}
 
---- get cybrvim configs
----@return CybrvimConfig
+--- get cybrcore configs
+---@return cybrcoreConfig
 local function get_configs()
     local configs = vim.deepcopy(DEFAULT_CONFIG)
     configs = tbl_deep_extend("force", configs, user_configs)
     return configs
 end
 
----setup cybrvim colorscheme
----@param configs CybrvimConfig?
+---setup cybrcore colorscheme
+---@param configs cybrcoreConfig?
 local function setup(configs)
    if type(configs) == "table" then
-      user_configs = configs --[[@as CybrvimConfig]]
+      user_configs = configs --[[@as cybrcoreConfig]]
    end
 end
 
----load cybrvim colorscheme
+---load cybrcore colorscheme
 ---@param theme string?
 local function load(theme)
    if vim.fn.has("nvim-0.7") ~= 1 then
-      vim.notify("cybrvim.nvim: you must use neovim 0.7 or higher")
+      vim.notify("cybrcore.nvim: you must use neovim 0.7 or higher")
       return
    end
 
@@ -136,7 +136,7 @@ local function load(theme)
 
    o.background = "dark"
    o.termguicolors = true
-   g.colors_name = theme or 'cybrvim'
+   g.colors_name = theme or 'cybrcore'
 
    apply(get_configs())
 end

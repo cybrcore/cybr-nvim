@@ -1,6 +1,6 @@
 -- # ---------------------------------------
--- # CYBRvim     neovim theme dashboard (part of cybrland)
--- # Project:    https://github.com/scherrer-txt/cybrland
+-- # cybr-nvim   lucid dashboard theme for neovim (part of cybrcore)
+-- # Project:    https://github.com/cybrcore/cybr-nvim
 -- # Author:     scherrer-txt   |   License:     GPL-3.0
 -- # Source:     ~/.config/nvim/plugins/dashboard.lua
 -- # ---------------------------------------
