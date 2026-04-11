@@ -1,22 +1,19 @@
-```
-░▒▓███████▓▒░░▒▓████████▓▒░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓██████████████▓▒░  
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░     ░▒▓█▓▒░░▒▓█▓▒░ ░▒▓█▓▓█▓▒░ ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
-░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓██████▓▒░   ░▒▓██▓▒░  ░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░░▒▓█▓▒░ 
-```
+<img src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/repo-banners/cybr-rofi-banner-top.png"/>
 
-<img src="../assets/inspiration/insp-nvim.png"/></td>
+# Showcase
+<img src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/showcase/cybr-nvim.png"/>
 <p align="center">
-  <em>neovim ↗ (left: lazyvim dashboard; right top: recent files; right bottom: file)</em>
+  <em>neovim ↗ (left: lazyvim dashboard; right: sample rust code)</em>
+</p>
+<img src="https://raw.githubusercontent.com/cybrcore/cybrcore/refs/heads/main/assets/showcase/cybr-nvim-all.png"/>
+<p align="center">
+  <em>neovim ↗ (top row, left-to-right: rust code, python code, css code; bottom row, l-t-r: bash code, C++ code, typescript code)</em>
 </p>
 
-> [!WARNING]
-> **Alpha version** - Non-standard structure. Proper lazy.nvim plugin coming in v1.5.  
+> [!CAUTION]
+> Theme is **work in progress**. Major refactor is in pipeline. Use at your own risk.  
 >  
-> This will **merge** files into your existing Neovim config. Backup first!  
+> This installaction will **merge** files into your existing Neovim config. Backup first!  
 > `cp -r ~/.config/nvim ~/.config/nvim.backup`
 
 # Steps
@@ -28,8 +25,9 @@ mkdir -p ~/.local/share/fonts
 unzip GeistMono.zip -d ~/.local/share/fonts/GeistMono
 fc-cache -fv
 ```
+- Make sure kitty is installed: `sudo pacman -S kitty` and [cybrcore theme](https://github.com/cybrcore/cybr-kitty) is applied
 - Make sure either 1) neovim is installed: `sudo pacman -S nvim`, or 2) lazyvim is installed: `git clone https://github.com/LazyVim/starter ~/.config/nvim`
-- See [Installation Guide](../INSTALL.md) if you haven't set up prerequisites yet
+- See [Installation Guide](https://github.com/cybrcore/cybrdots/blob/main/INSTALL.md) if you're coming from [cybrdots](https://github.com/cybrcore/cybrdots) and haven't set up prerequisites yet
 - [Nvim Github](https://github.com/neovim/neovim) | [Nvim Arch Wiki](https://wiki.archlinux.org/title/Neovim)
 - [Lazyvim Github](https://github.com/LazyVim/LazyVim)
 
